@@ -1,0 +1,34 @@
+:root{
+  --bg: #e0f7ff;
+; --card:#fff; --accent:#2563eb; --muted:#64748b; --success:#16a34a; --danger:#dc2626;
+  --shadow:0 10px 30px rgba(37,99,235,0.06);
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#fff);color:#0f172a}
+.container{max-width:1100px;margin:28px auto;padding:18px}
+.top{display:flex;justify-content:space-between;align-items:center;background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow)}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:50px;height:50px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#1d4ed8);display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px}
+.brand h1{margin:0;font-size:18px}
+.sub{margin:0;color:var(--muted);font-size:13px}
+.controls input{padding:8px 10px;border-radius:10px;border:1px solid #e6eefc;min-width:240px}
+.tabs{display:flex;gap:8px;margin:14px 0}
+.tab{padding:8px 12px;border-radius:10px;border:none;background:#eef4ff;color:var(--accent);cursor:pointer}
+.tab.active{background:linear-gradient(90deg,var(--accent),#1d4ed8);color:white;box-shadow:0 8px 24px rgba(37,99,235,0.12)}
+.cards{display:flex;gap:12px;margin-bottom:12px}
+.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:var(--shadow);min-width:140px;text-align:center}
+.table-wrap{background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow)}
+.grid{width:100%;border-collapse:collapse}
+.grid th,.grid td{padding:10px 12px;text-align:left;border-bottom:1px solid #f2f6fb}
+.grid thead th{background:#f8fafc;color:var(--accent);font-weight:700}
+.grid tbody tr:hover{background:#fbfdff}
+.btn{background:#eef4ff;color:var(--accent);padding:8px 12px;border-radius:10px;border:none;cursor:pointer}
+.badge{display:inline-block;padding:4px 8px;border-radius:8px;font-size:12px}
+.badge.pending{background:#fff4e6;color:#d97706}
+.badge.success{background:#e6ffef;color:var(--success)}
+.badge.error{background:#ffe6e6;color:var(--danger)}
+.empty{padding:16px;text-align:center;color:var(--muted)}
+.summary{padding:12px;background:var(--card);border-radius:10px;box-shadow:var(--shadow)}
+.foot{text-align:center;margin-top:14px;color:var(--muted);font-size:13px}
+@media (max-width:800px){.controls{display:block}.cards{flex-direction:column}}
+
